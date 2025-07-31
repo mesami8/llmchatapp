@@ -266,7 +266,7 @@ def main():
         st.markdown("---")
 
         # Save Current Conversation
-        if st.session_state.messages and db is not None:
+        if db is not None:
             col1, col2 = st.columns(2)
             with col1:
                 if st.button("💾 Save Chat", use_container_width=True):
